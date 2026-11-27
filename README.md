@@ -197,6 +197,20 @@ int h = round(progress_ * utf8Length(currentText()));
 
 ---
 
+## 运行效果（真机截图）
+
+全屏歌词画布，大号歌词随播放进度**连续平滑滚动**，并对中文逐字做卡拉OK高亮（已唱为白、未唱为灰），底部小字为上一句：
+
+| 效果 | 截图 |
+|------|------|
+| 全屏歌词 · 当前句高亮 + 下一句灰色预告 | ![全屏歌词滚动](screenshots/01-fullscreen-lyrics.jpg) |
+| 逐字卡拉OK高亮（已唱白 / 未唱灰） | ![逐字高亮](screenshots/02-karaoke-highlight.jpg) |
+| App 主界面 · 权限就绪状态与开启入口 | ![App主界面](screenshots/03-app-main.jpg) |
+
+> 截图来自 Android 真机运行「汽水熄屏歌词（SodaLyrics）」App。核心滚动算法即本仓库的 C++ 引擎。
+
+---
+
 ## 隐私与免责声明
 
 - 本仓库及附带的安卓应用（`index.html` 内嵌 APK）为**个人学业作品**，**非官方应用**，与汽水音乐等音乐平台无任何隶属或合作关系。
